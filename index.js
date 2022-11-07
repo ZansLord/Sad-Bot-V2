@@ -40,14 +40,14 @@ const {
 } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 import yargs from 'yargs';
-say(`SAD-BOT`, {
+say(`XINX-BOT`, {
 	font: 'shade',
 	align: 'center',
 	gradient: ['#12c2e9', '#c471ed'],
 	transitionGradient: true,
 	letterSpacing: 3,
 });
-say(`'SAD-BOT' Recoded By Papah-Chan`, {
+say(`'XINX-BOT' Recoded By XINX-HG`, {
 	font: 'console',
 	align: 'center',
 	gradient: ['#DCE35B', '#45B649'],
@@ -74,7 +74,7 @@ function start(file) {
 	})
 	let p = fork()
 	p.on('message', data => {
-		console.log('[Sad-Bot]', data)
+		console.log('[Xinx-Bot]', data)
 		switch (data) {
 			case 'reset':
 				p.process.kill()

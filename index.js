@@ -25,7 +25,12 @@ import {
 // https://stackoverflow.com/a/50052194
 const __dirname = dirname(fileURLToPath(
 	import.meta.url))
-const require = createRequire(__dirname) // Bring in the ability to create the 'require' method
+const require = createRequire(__dirname) 
+
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
+
+
+// Bring in the ability to create the 'require' method
 const {
 	name,
 	author
